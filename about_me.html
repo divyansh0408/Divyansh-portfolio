@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(17, 28, 65);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+      /*  .about-col-2 p {
+
+             font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            color: rgb(244, 250, 255);
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: 20px;
+            font-style: normal;
+        }*/
+
+
+        #about {
+            padding: 80px 0;
+            color: white;
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .about-col-1 {
+            flex-basis: 34%;
+            margin-left: 25px;
+        }
+
+        .about-col-1 img {
+            width: 75%;
+            border-radius: 15px;
+        }
+
+        .about-col-2 {
+            flex-basis: 60%;
+            }
+
+        .sub-title {
+            font-size: 60px;
+            font-weight: 600;
+            color: rgb(167, 185, 185);
+        }
+
+        .tab-titles {
+            display: flex;
+            margin: 5px 0 40px;
+        }
+
+        .tab-links {
+            margin-right: 70px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .tab-links::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: rgb(211, 45, 45);
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.5s;
+        }
+
+        .tab-links.active-link::after {
+            width: 75%;
+
+        }
+
+        .tab-contents ul li {
+            list-style: none;
+            margin: 10px -40px;
+            font-size: 13px;
+            color: gray;
+
+        }
+
+        .tab-contents ul li span {
+            color: rgb(177, 209, 59);
+            font-size: 22px;
+        }
+
+        .tab-contents {
+            display: none;
+
+        }
+
+        .tab-contents.active-tab {
+            display: block;
+
+
+               }
+               .button-container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between buttons */
+    align-items: center; /* Align buttons vertically */
+    padding: 20px; /* Adjust padding as needed */
+}
+.button-container button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+
+<body>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="divyansh.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Divyans Chaudhary, a recent BCA graduate with a solid foundation in Java and Python. As a
+                        tech enthusiast, I thrive on exploring new technologies and tackling complex challenges. With a
+                        passion for problem-solving and innovation, my goal is to become a skilled software engineer and
+                        contribute to impactful projects. I’m eager to apply my skills and knowledge in a dynamic
+                        environment. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('softskills')">soft skills</p>
+                    </div>
+                    <!--skills tab-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java </span><br>Advance level</li>
+                            <li><span>SQL </span><br>Intermediate </li>
+                            <li><span>Python </span><br>Fundamentals </li>
+                        </ul>
+                    </div>
+                    <!--Education tab-->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>BCA&nbsp;(2025) </span><br>GLA University , Mathura</span></li>
+                            <li><span>Intermediate&nbsp;(2022)</span><br>St. Paul's School , Mathura </span></li>
+                            <li><span>High School&nbsp;(2020) </span><br>St. Paul's School , Mathura </span></li>
+                        </ul>
+                    </div>
+                    <!--softskills tab-->
+                    <div class="tab-contents" id="softskills">
+                        <ul>
+                            <li><span>Problem Solver </span><br>Skilled in identifying challenges and <br>creating
+                                innovative, effective solutions.</span></li>
+                            <li><span>Adaptive Nature </span><br>Adapts swiftly to change, embracing <br>new challenges
+                                and learning opportunities.</span></li>
+                            <li><span>Attention To Detail </span><br>Keen eye for detail, ensuring <br>accuracy and
+                                high-quality outcomes consistently. </span></li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button>SHOW</button>
+        <button>SHOW</button>
+        <button>SHOW</button>
+        <button>SHOW</button>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
