@@ -78,7 +78,12 @@ nav ul li a:hover {
 
 
 
+.ctbttn:hover{
+    background: #021550;
+    box-shadow:5px 10px rgba(1, 12, 61, 0.164);
+    transition: 0.2s;
 
+}
 
 
 
@@ -212,7 +217,12 @@ main hr {
 }
 
 
-
+.leftsection .btn:hover{
+    background: #14265f;
+    box-shadow: 2px ;
+    box-shadow:5px 10px rgba(1, 12, 61, 0.164);
+    transition: 0.2s;
+}
 
 
 
@@ -230,7 +240,7 @@ main hr {
     border-radius: 3px;
     color: rgb(132, 133, 135);
     font-size: 12px;
-
+cursor: pointer;
     padding: 6px 35px;
 
 }
